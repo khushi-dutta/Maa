@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(#e6a4b4, #f3d7ca);
+}
+
+:root {
+  --background-image: #fff8e3;
+  --navbar-height: 59px;
+  --darkcolor: #e6a4b4;
+  --seccolor: #f3d7ca;
+  --thirdcolor: #fff8e3;
+  --background-color: #f5eee6;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+#navbar::before {
+  content: "";
+  background-color: #e22f5c9c;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+#logo {
+  margin-right: auto;
+}
+#logo {
+  cursor: pointer;
+}
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Arial", sans-serif;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: var(--thirdcolor);
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: var(--thirdcolor);
+}
+
+.card-text {
+  color: #e65277;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 6.5vw;
+}
+
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header .header-img {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+header .header-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: calc(100vh - 200px);
+  margin: 0 auto;
+}
+
+header .header-img .header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e22f5c;
+}
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  word-spacing: 0.4vw;
+}
+
+.card {
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.card:hover {
+  z-index: 2;
+  transition: all 200ms ease-in;
+  transform: scale(1.05);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us</title>
+    <link rel="stylesheet" href="join.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="/logo.png" alt="" onclick="redirectToHomePage()" />
+      </div>
+      <ul>
+        <li class="item"><a href="/index.html">Home</a></li>
+        <li class="item"><a href="/about us/about.html">About us</a></li>
+        <li class="item"><a href="/Group/group.html">Groups</a></li>
+        <li class="item"><a href="/Blog/blog.html">Blogs</a></li>
+        <li class="item"><a href="/premium/premium.html">Premium</a></li>
+        <li class="item"><a href="#join">Join us</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-container">
+      <form action="" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Join Us</h2>
+          <hr />
+        </div>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit <img src="arrow_icon.png" alt="" />
+        </button>
+      </form>
+      <div class="contact-right">
+        <img src="right_img.png" alt="" />
+      </div>
+    </div>
+
+    <script>
+      function redirectToHomePage() {
+        window.location.href = '/index.html';
+      }
+    </script>
+
+  </body>
+</html>

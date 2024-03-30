@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8e3;
+  color: #333;
+  line-height: 1.6;
+}
+
+:root {
+  --background-image: #fff8e3;
+  --navbar-height: 59px;
+  --darkcolor: #e6a4b4;
+  --seccolor: #f3d7ca;
+  --thirdcolor: #fff8e3;
+  --background-color: #f5eee6;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+#navbar::before {
+  content: "";
+  background-color: #e22f5c9c;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Arial", sans-serif;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: var(--thirdcolor);
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: var(--thirdcolor);
+}
+
+#logo {
+  margin-right: auto;
+}
+#logo {
+  cursor: pointer;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #e71449;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 80vw;
+  height: 4px;
+  background-color: #e76b8a;
+  padding-left: 10%;
+  position: relative;
+  transition: width 0.3s ease-in-out;
+}
+
+.line:hover {
+  width: 100px; /* Width when hovered */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin: 20px 35px;
+}
+
+.section p {
+  font-size: 16px;
+  margin: auto 35px;
+}
+
+.image-section {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}

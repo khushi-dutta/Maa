@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(#E6A4B4,#F3D7CA);
+}
+
+
+:root{
+  --background-image: #FFF8E3;
+  --navbar-height: 59px;
+  --darkcolor: #E6A4B4;
+  --seccolor: #F3D7CA;
+  --thirdcolor: #FFF8E3;
+  --background-color: #F5EEE6;
+}
+
+/* Navigation Bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  
+}
+
+#navbar::before{
+  content: "";
+  background-color: #e22f5c9c;
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+  margin: 10px 34px;
+}
+#logo {
+  margin-right: auto;
+}
+#logo img{
+  height: 59px;
+  margin: 3px 6px;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+#navbar ul{
+  display: flex;
+  font-family: 'Arial', sans-serif;
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a{
+  color: var(--thirdcolor);
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: var(--thirdcolor);
+}
+
+ 
+  .title h2{
+    font-weight: 600;
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #e71449;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+
+
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    gap: 2rem;
+    margin: 20px;
+  }
+
+
+  .pricing-plan {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+
+  .plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+
+  .plan-price {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .plan-features li {
+    margin-bottom: 20px;
+  }
+
+
+  .plan-button {
+    padding: 10px;
+    background-color: #e22f5c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+
+
+  /* @media (max-width: 1250px) {
+    .pricing-container {
+      flex-direction: column;
+      height: 100%;
+    }
+  } */
